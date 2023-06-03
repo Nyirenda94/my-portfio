@@ -2,52 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/projects.css">
     <title>Patson</title>
+     <style>
+      section,form{
+        padding: 10px;
+      }
+      #searchform{
+        display: flex;
+        align-items: center;
+      }
+      #searchInput{
+        padding: 5px;
+        width: 200px;
+      }
+      #searchForm button{
+        padding: 5px 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+     </style>
 </head>
 <body>
  <!-- navigation bar with student name     -->
-  <header>
-    <nav>
-      <div class="logo-student">
-        <h3>Patson</h3>
-      </div>
-      <ul class="links">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li><a href="about me.html">About</a></li>
-        <li><a href="myskills.html">My skills</a></li>
-        <li><a href="projects.html">projects</a></li>
-      </ul>
-    </nav>
-  </header>
+ <nav>
+  <label class="logo">Patson</label>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="about me.html">About</a></li>
+    <li><a href="myskills.html">My skills</a></li>
+    <li><a href="projects.html">Projects</a></li>
+  </ul>
+</nav>  
   <!-- end of navigation bar -->
+  
+  <!-- Search bar-->
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Search...."/>
+    <button type="submit">search</button>
+  </form>
+  <!--End Search bar-->
+  
   <section>
     <h4>Recent Projects</h4>
-    <div class="project-card">
-      <img src="./images/2.jpg">
-      <p>This is one of my projects am working on.</p>
-      <a href="formss.html">View Project</a>
+    
+      
+      <p>These are some of my projects am working on
+         as a begginer in this programming field .
+        </p>
+      <a href="Calculator.html">Calculator</a><br>
+      <img class="calc" src=".images/calculator.jpg"><br>
+      <a href="Time Conveter.html">Time Conveter</a><br>
+      <img class="time" src=".images/time coveter.jpg">
     </div>
   </section>
-   <footer>
-    <div class="contact">
-      <div class="phone-area">
-        <span>Phone</span><br>
-        <a href="tel:+265888416094">+265888416094</a><br>
-        <a href="tel:+265996110803">+265996110803</a>
-      </div>
-      <div class="email-area">
-        <span>Email Address</span><br>
-        <a href="mailto:nyirendapatson13@gmail.com">nyirendapatson13@gmail.com</a>
-      </div>
-      <div class="sm-area">
-        <span>Social Media</span><br>
-        <a href="#">facebook</a>
-      </div>
-    </div>
-  </footer>  
-
+  <script src="java.js"></script>
   </body>
 </html>

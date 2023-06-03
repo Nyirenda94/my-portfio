@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+             background-color: #072E33;
+             padding: 50px;
+             text-align: center;
+             width: 30%;
+            }
+            lable{
+                font-family: Arial;
+                font-size: 30px;
+                color: White;
+            }
+            input{
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TIME CONVERTER</h1><hr>
+        <form>
+            
+            <lable>Name: </lable><input type="text" id="Name"><br><br>
+            <lable>Enter Days: </lable><input type="number" id="Day"><br><br>
+            
+            <lable>Convert to: </lable>
+            
+            <select id="Option">
+                <option value="hour">Hour</option>
+                <option value="minutes">Minute</option>
+            </select><br><br>
+            
+            
+            <button onclick="MyTime()">CONVERT</button>
+            <button type="reset">Reset</button>
+        </form>
+        <script>
+            function MyTime(){
+                 var Name = document.getElementById("Name").value;
+                 var Days = parseInt(document.getElementById("Day").value);
+                 var Option = document.getElementById("Option").value;
+                 var Convert;
+   if (Option === "hour") {
+      Convert = Days* 24 +"hours";
+ } else if (Option === "minutes") {
+          Convert = Days * 24 * 60 +"minutes";
+ }
+
+                 alert("Hi!" + Name + "\" + Days + "days="+ Convert);
+                 }
+        </script>
+    </body>
+</html>
