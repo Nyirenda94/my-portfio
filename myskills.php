@@ -15,10 +15,10 @@
 <nav>
   <label class="logo">Patson</label>
   <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="about me.html">About</a></li>
-    <li><a href="myskills.html">My skills</a></li>
-    <li><a href="projects.html">Projects</a></li>
+  <li><a class="active" href="index.php">Home</a></li>
+    <li><a href="aboutme.php">About</a></li>
+    <li><a href="myskills.php">My skills</a></li>
+    <li><a href="projects.php">Projects</a></li>
   </ul>
 </nav>  
 <!-- end of navigation bar with student name     -->

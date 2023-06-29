@@ -53,16 +53,7 @@ nav ul li a::after{
  nav ul li a:hover::after{
     width: 100%;
  }
-}
-/*a.active,a:hover{
-    background: #1b9bff;
-    transition: 5s;
-}
-a:hover{
-    background: none;
-    color: #111213;
-    transition: 5s;
-}*/
+ 
 label.logo{
      font-size: 30px;
     padding-left: 50px;

@@ -2,43 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"type="text/css" href="./css/style.css"/>
     <title>Patson</title>
-    
 </head>
-<body >
-  
+<body>
  <!-- navigation bar with student name     -->
 <nav>
   <label class="logo">Patson</label>
   <ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="about me.html">About</a></li>
-    <li><a href="myskills.html">My skills</a></li>
-    <li><a href="projects.html">Projects</a></li>
+    <li><a class="active" href="index.php">Home</a></li>
+    <li><a href="aboutme.php">About</a></li>
+    <li><a href="myskills.php">My skills</a></li>
+    <li><a href="projects.php">Projects</a></li>
   </ul>
-</nav>
-<h1 id="greeting"></h1>
-<div id="greeting"></div>
-
-<!-- student bio -->
-  <section class="bio" id="about">
-    <div class="student-bio">
-      <h3>I'm Patson Vincent Nyirenda</h3>
-      <h4>A Web Designer</h4>
-      <p><img class="me" src="./Images/1.png"  alt="1" 
-        style="width:170px;height:170px;margin-right:15px;">
-        I'm a Lilongwe based man pursuing a bachelors degree 
-        in Information<br> and Communicatio Technology(ICT) 
-        at Mzuzu University, weekend class<br> which is under
-         the Faculty of Faculty of Science, Technology and Innovation.
-      </p>
-     
-    </div>
-  </section>
-  <!-- end of the about me section -->
-
+</nav>  
+<!-- end of navigation bas -->
 <h2>Contac Form</h2>
 
 <button onclick="document.getElementById('form').style.display='block'" style="width:auto;">Click Me!</button>
@@ -71,6 +49,24 @@
      </form>
     </div>
 </div>
-<script src="java.js"></script>
+    
+    <footer>
+      <div class="contact">
+        <div class="phone-area">
+          <span>Phone</span><br>
+          <a href="tel:+265888416094">+265888416094</a><br>
+          <a href="tel:+265996110803">+265996110803</a>
+        </div>
+        <div class="email-area">
+          <span>Email Address</span><br>
+          <a href="mailto:nyirendapatson13@gmail.com">nyirendapatson13@gmail.com</a>
+        </div>
+        <div class="sm-area">
+          <span>Social Media</span><br>
+          <a href="#">facebook</a>
+        </div>
+      </div>
+    </footer>
+    <script src="java.js"></script>
 </body>
 </html>
