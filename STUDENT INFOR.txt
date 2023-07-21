@@ -1,3 +1,15 @@
 STUDENT INFOR
 Author:Patson Vincent Nyirenda
 Registration Number:BICTU4322
+
+*myportfolio project
+*To be able to view the site download all the files
+*copy them into 'web' folder
+*create folders same as those you have downloaded the files from
+*put every file in its recommended folder
+
+*copy the web folder (which has all the files) and paste it in a xampp/htdocs folder
+*the database is in the database folder. import the database in your xampp. The database name should be Champo.
+*to run it , first open xampp application and then start your apache and msql
+*on your browser write the following link localhost/myportfolio/index.php
+*but the project is still in process sir

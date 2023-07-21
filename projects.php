@@ -34,6 +34,7 @@
     <li><a href="aboutme.php">About</a></li>
     <li><a href="myskills.php">My skills</a></li>
     <li><a href="projects.php">Projects</a></li>
+   
   </ul>
 </nav>  
   <!-- end of navigation bar -->

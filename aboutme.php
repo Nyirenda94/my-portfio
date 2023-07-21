@@ -30,6 +30,9 @@
 
       <label for="lname"><b>Last Name</b></label>
       <input type="text" placeholder="Enter Last name" name="lname" required><br>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter your email" name="email" required><br>
       
       <label for="phonenumber"><b>Phone number</b></label>
       <input type="text" placeholder="+265 99..." name="phonenumber" required><br>

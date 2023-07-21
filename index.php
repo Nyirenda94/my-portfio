@@ -14,9 +14,10 @@
   <label class="logo">Patson</label>
   <ul>
   <li><a class="active" href="index.php">Home</a></li>
-    <li><a href="aboutme.php">About</a></li>
+    
     <li><a href="myskills.php">My skills</a></li>
     <li><a href="projects.php">Projects</a></li>
+    <li><a href="aboutme.php">About</a></li>
   </ul>
 </nav>
 <h1 id="greeting"></h1>
@@ -28,23 +29,30 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "champo";
+$dbname = "Champo";
 
-// Create Connection 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+// create connection
+$conn = mysqli_connect($servername,$username,$password) or 
+die("there is an error". mysqli_connect_error());
 
-// check connection
-if ($conn->connect_error){
-    die("connection failed:". $conn->coneect_erro);
+//check connection
+if($conn){
+    echo "";
+}
+
+// database section
+$db_conn = mysqli_select_db($conn, "Champo")or die("selection error".mysqli_error());
+if($db_conn){
+echo "";
 }
 
 //SQL query to retrieve data from database
-$sql = "SELECT * FROM patson";
-$result = $conn->query($sql);
+$query = "SELECT * FROM patson";
+$result = mysqli_query($conn,$query);
 
-if ($result ->num_rows > 0){
+if (mysqli_num_rows($result) > 0){
     // output data of each row
-    while($row = $result ->fetch_assoc()) {
+    while($row = mysqli_fetch_assoc($result)) {
         echo "" . $row["Bio"]. "<br>";
     }
 } else{
